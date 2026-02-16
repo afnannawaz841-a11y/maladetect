@@ -46,8 +46,8 @@ Frontend (HTML/CSS/JS) → Flask Backend → TensorFlow Models → Prediction Re
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/malaria-detection.git
-cd malaria-detection
+gh repo clone afnannawaz841-a11y/maladetect
+cd maladetect
 ```
 
 2. **Install dependencies**
