@@ -1,0 +1,69 @@
+Figure 3.1: MalaDetect System Architecture Overview
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                        MALADETECT SYSTEM ARCHITECTURE                          │
+│                     Web-based Malaria Detection System                         │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              PRESENTATION LAYER                                │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                │
+│  │   HTML5 Pages   │  │  Tailwind CSS   │  │   JavaScript    │                │
+│  │                 │  │                 │  │                 │                │
+│  │ • Login/Register│  │ • Responsive    │  │ • File Upload   │                │
+│  │ • Image Upload  │  │ • Modern UI     │  │ • AJAX Requests │                │
+│  │ • Results View  │  │ • Cross-browser │  │ • Form Handling │                │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                               SECURITY LAYER                                   │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                │
+│  │ Authentication  │  │ Session Mgmt    │  │ Access Control  │                │
+│  │                 │  │                 │  │                 │                │
+│  │ • BCrypt Hash   │  │ • Secure Cookies│  │ • Route Guards  │                │
+│  │ • Login/Logout  │  │ • Session Store │  │ • User Validation│                │
+│  │ • User Registry │  │ • Timeout       │  │ • File Security │                │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                             APPLICATION LAYER                                  │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                │
+│  │  Flask Backend  │  │  SQLite Database│  │  File Processing│                │
+│  │                 │  │                 │  │                 │                │
+│  │ • Route Handling│  │ • User Storage  │  │ • Image Upload  │                │
+│  │ • Request Proc. │  │ • SQLAlchemy    │  │ • Validation    │                │
+│  │ • Response Gen. │  │ • Data Models   │  │ • Temp Storage  │                │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                      │
+                                      ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                            ML INFERENCE LAYER                                  │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                │
+│  │  Model Loading  │  │  Image Proc.    │  │ Result Output   │                │
+│  │                 │  │                 │  │                 │                │
+│  │ • MobileNet     │  │ • Preprocessing │  │ • Classification│                │
+│  │ • VGG16         │  │ • Normalization │  │ • Confidence    │                │
+│  │ • TensorFlow    │  │ • Resizing      │  │ • JSON Response │                │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              DATA FLOW                                         │
+│                                                                                 │
+│  User Request → Security Check → Flask Processing → ML Inference → Response    │
+│                                                                                 │
+│  1. User uploads image via web interface                                       │
+│  2. Authentication & session validation                                        │
+│  3. File processing & validation                                               │
+│  4. Model inference & prediction                                               │
+│  5. Result formatting & display                                                │
+└─────────────────────────────────────────────────────────────────────────────────┘

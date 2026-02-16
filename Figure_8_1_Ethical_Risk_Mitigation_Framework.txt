@@ -1,0 +1,65 @@
+Figure 8.1: Ethical Risk Mitigation Framework for MalaDetect
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                    ETHICAL RISK MITIGATION FRAMEWORK                            │
+│                              MalaDetect System                                  │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────────────────────┐
+│   ETHICAL RISK  │    │   MITIGATION    │    │         IMPLEMENTATION          │
+│                 │    │    STRATEGY     │    │                                 │
+└─────────────────┘    └─────────────────┘    └─────────────────────────────────┘
+
+┌─────────────────┐         ┌───────┐         ┌─────────────────────────────────┐
+│  Over-reliance  │ ────────│   →   │────────▶│  Medical Disclaimer             │
+│  on AI Results  │         └───────┘         │  • "Research purposes only"     │
+│                 │                           │  • "Consult medical professional"│
+│  Risk: False    │                           │  • Prominent warning display    │
+│  confidence in  │                           │  • Decision-support positioning │
+│  automated      │                           │                                 │
+│  diagnosis      │                           │                                 │
+└─────────────────┘                           └─────────────────────────────────┘
+
+┌─────────────────┐         ┌───────┐         ┌─────────────────────────────────┐
+│  Algorithmic    │ ────────│   →   │────────▶│  Dataset Limitation Disclosure  │
+│  Bias           │         └───────┘         │  • Training data acknowledgment │
+│                 │                           │  • Population representation    │
+│  Risk: Reduced  │                           │  • Geographic limitations       │
+│  accuracy for   │                           │  • Confidence score display     │
+│  certain        │                           │  • Model performance metrics    │
+│  populations    │                           │                                 │
+└─────────────────┘                           └─────────────────────────────────┘
+
+┌─────────────────┐         ┌───────┐         ┌─────────────────────────────────┐
+│  System Misuse  │ ────────│   →   │────────▶│  Access Control Implementation  │
+│                 │         └───────┘         │  • User authentication required │
+│  Risk: Unauth-  │                           │  • Session-based security       │
+│  orised access  │                           │  • Prediction page restrictions  │
+│  by unqualified │                           │  • Account registration process  │
+│  users          │                           │  • Secure credential handling    │
+└─────────────────┘                           └─────────────────────────────────┘
+
+┌─────────────────┐         ┌───────┐         ┌─────────────────────────────────┐
+│  Data Privacy   │ ────────│   →   │────────▶│  Privacy Protection Measures    │
+│  Violations     │         └───────┘         │  • Temporary file processing    │
+│                 │                           │  • Automatic image deletion     │
+│  Risk: Unauthor-│                           │  • No permanent storage         │
+│  ised retention │                           │  • Minimal data collection      │
+│  of medical     │                           │  • Secure session management    │
+│  images         │                           │                                 │
+└─────────────────┘                           └─────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           CONTINUOUS MONITORING                                 │
+│                                                                                 │
+│  • Regular ethical review of system usage                                      │
+│  • User feedback collection and analysis                                       │
+│  • Performance monitoring across diverse populations                           │
+│  • Security audit and vulnerability assessment                                 │
+│  • Compliance review with evolving healthcare regulations                      │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+Legend:
+────────▶  Risk-to-Mitigation Mapping
+┌─────┐    Risk Category / Mitigation Strategy
+│     │    Implementation Component
